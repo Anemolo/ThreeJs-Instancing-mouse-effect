@@ -27,9 +27,21 @@
 				<a class="frame__prev" href="">Previous demo</a>
 			</div>
 			<div class="content">
-				<!-- the content -->
+        <div id="canvas-wrapper"><canvas id="canvas"></canvas></div>
 			</div>
 		</main>
 		<!--script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script-->
+		<script src="./dist/index.js"></script>
+    <script>
+
+      new InstancedMouseEffect({
+        speed: 1,
+        frequency: 1,
+        mouseSize: 1,
+        rotationSpeed: 1,
+        color: "#1084ff",
+        shape: "square", // cylinder, torus, icosahedron OR any THREE.Geometry
+      })
+    </script>
 	</body>
 </html>
