@@ -19,7 +19,8 @@ yarn dev
 ```
 
 2. Run mode -> Local server only to run the code directly without modifications. 
-Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
+    1. Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
+    2. Open index.html
 
 ### Files && comments
 
