@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";</script>
 		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+  
+  <script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
 	</head>
 	<body class="demo-1">
 		<main>
@@ -34,15 +36,27 @@
 		<script src="./dist/index.js"></script>
     <script>
 
-      new InstancedMouseEffect({
+     follower = new THREE.Mesh(
+       new THREE.SphereGeometry(),
+       new THREE.MeshPhysicalMaterial({ 
+         emissive: 0x000000, 
+         color:  "#ff4080", 
+         color:  "#2040bb", 
+         roughness: 0,
+         metalness: 0.4
+       })
+     )
+     follower.scale.setScalar(0.4)
+      
+      let effect = new InstancedMouseEffect({
         speed: 1,
         frequency: 1,
         mouseSize: 1,
         rotationSpeed: 1,
-        color: "#1084ff",
-        colorDegrade: 1.5,
+        color: "#40aaaa",
         shape: "square", // cylinder, torus, icosahedron OR any THREE.Geometry
-      })
+      }, follower)
+     effect.rendering.scene.add(follower)
     </script>
 	</body>
 </html>
