@@ -1,8 +1,8 @@
-# ThreeJs Instancing Mouse Effect
+# Mouse Effect with Three.js Instancing
 
-Creating interactive mouse trail effects with threeJS instancing.
+Demo for tutorial on creating interactive mouse effects with Three.js instancing.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Mouse effect](https://tympanus.net/codrops/wp-content/uploads/2023/12/instancing.jpg)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=74529)
 
