@@ -1,12 +1,12 @@
 # ThreeJs Instancing Mouse Effect
 
-Creating interactive mouse trail effects with threeJS instancing
+Creating interactive mouse trail effects with threeJS instancing.
 
 ![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=74529)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](http://tympanus.net/Tutorials/MouseInstancing/)
 
 ## Installation
 
@@ -28,10 +28,6 @@ yarn dev
 | --- | --- |
 | demo.js | The meat of the demo |
 | rendering.js | All the threeJS rendering |
-
-## Credits
-
-- Images generated with [Midjourney](https://midjourney.com)
 
 ## Misc
 

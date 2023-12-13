@@ -3,36 +3,34 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Demoname | Demo 1 | Codrops</title>
-		<!-- Generate Meta Tags via https://www.opengraph.xyz -->
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<title>Mouse Effect with Instancing in Three.js | Demo 3 | Codrops</title>
+		<meta name="description" content="Demo 3 for tutorial on how to create a mouse effect with instancing in Three.js" />
+		<meta name="keywords" content="three.js, instancing, tutorial, mouse effect, interactive, 3d, webgl" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";</script>
-		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
-  
-  <script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
+		<script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 	</head>
-	<body class="demo-1">
+	<body class="demo-3">
 		<main>
-			<div class="frame">
-				<div class="frame__title"> 
-					<h1 class="frame__title-main">Title</h1> 
-					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p="> 
-						<span class="oh__inner">Back to the article</span> 
-						<svg width="18px" height="18px" viewBox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
-						</svg>
-					</a>
-				</div>
-				<a class="frame__prev" href="">Previous demo</a>
-			</div>
+			<header class="frame">
+				<h1 class="frame__title">Mouse Effect with Instancing in Three.js</h1> 
+				<a class="frame__back" href="https://tympanus.net/codrops/?p=74529">Back to the article</a>
+				<a class="frame__prev" href="https://tympanus.net/Development/SlicedTextEffect">Previous demo</a>
+				<a class="frame__sub" href="https://tympanus.net/codrops/collective/">Subscribe</a>
+				<nav class="frame__demos">
+					<a href="index.html">Demo 1</a>
+					<a href="index2.html">Demo 2</a>
+					<span>Demo 3</span>
+				</nav>
+			</header>
 			<div class="content">
         <div id="canvas-wrapper"><canvas id="canvas"></canvas></div>
 			</div>
 		</main>
-		<!--script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script-->
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
 		<script src="./dist/index.js"></script>
     <script>
 
@@ -41,7 +39,7 @@
        new THREE.MeshPhysicalMaterial({ 
          emissive: 0x000000, 
          color:  "#ff4080", 
-         color:  "#2040bb", 
+         color:  "#cb0f40", 
          roughness: 0,
          metalness: 0.4
        })
@@ -53,7 +51,7 @@
         frequency: 1,
         mouseSize: 1,
         rotationSpeed: 1,
-        color: "#40aaaa",
+        color: "#ddd",
         shape: "square", // cylinder, torus, icosahedron OR any THREE.Geometry
       }, follower)
      effect.rendering.scene.add(follower)
